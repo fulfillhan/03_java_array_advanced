@@ -2,7 +2,7 @@ package step3_01.arrayAdvanced;
 
 import java.util.Scanner;
 
-public class ArrayEx41_문제풀이 {
+public class ArrayEx41_연습 {
 	/*
 	 * # 사다리 게임
 	 * 

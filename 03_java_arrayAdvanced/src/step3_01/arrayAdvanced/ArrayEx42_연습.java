@@ -1,7 +1,5 @@
 package step3_01.arrayAdvanced;
-
-import java.util.Scanner;
-
+// 2023-11-16 2차 연습
 /*
  * 
  * # 나만의 마블
@@ -17,11 +15,12 @@ import java.util.Scanner;
  * 
  */
 
-public class ArrayEx42_문제 {
+import java.util.Scanner;
 
+public class ArrayEx42_연습 {
+	
 	public static void main(String[] args) {
-
-		Scanner scan = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		final int ROAD = 20;// 벽
 		
@@ -34,32 +33,36 @@ public class ArrayEx42_문제 {
 		};
 		
 		int player = 0;
-		
-		while(true) {
-			
+		while (true) {
+			// 모양 표시하기
 			for (int i = 0; i < map.length; i++) {
 				for (int j = 0; j < map[i].length; j++) {
-					if (map[i][j] == ROAD) 		  
+					if (map[i][j] == player) {
+						System.out.print("옷 ");
+					}
+					else if (map[i][j] == ROAD) {
 						System.out.print("■ ");
-					else if (map[i][j] == player) 	
-						System.out.print("P ");
-					else 							
-						System.out.print("□ ");
+						}
+						else {
+							System.out.print("□ ");
+						}
+					}System.out.println();
 				}
 				System.out.println();
+				
+				System.out.print("1~3을 입력하세요. : ");
+				int move = scanner.nextInt();
+				
+				// 이 부분이 자꾸 오류...
+				player = player+move;
+				player = player%16;
+				
+				}
 			}
-			System.out.println();
-
-			System.out.print("1~3을 입력하세요 : ");
-			int move = scan.nextInt();
 			
-			player += move;
-			
-			player %= 16;
-			
-		
 		}
+		
+	
+	
 
-	}
 
-}
