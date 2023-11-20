@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 
 
-public class ArrayEx35 {
+public class ArrayEx35_정답예시 {
 
 	public static void main(String[] args) {
 		
