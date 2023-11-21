@@ -80,14 +80,15 @@ public class ArrayEx35_정답예시 {
 					arr = null;
 				}
 				else if (elementCnt > 1) {
-					int[] temp = arr;
-					arr = new int[elementCnt - 1];
+					int[] temp = arr;//temp = [1993, 7]
+					arr = new int[elementCnt - 1];// arr =  new int[1]  arr=[0]
 					
 					for (int i = 0; i < delIdx; i++) {
 						arr[i] = temp[i];
 					}
+					
 					for (int i = delIdx; i < elementCnt - 1; i++) {
-						arr[i] = temp[i + 1];
+						arr[i] = temp[i + 1];// temp[2] = [1993, 7]  arr[0] = [0]
 					}
 					temp = null;
 				}
@@ -96,12 +97,12 @@ public class ArrayEx35_정답예시 {
 			}
 			else if (sel == 3) {
 				System.out.print("[삭제]데이터 입력 : ");
-				int delData = scan.nextInt();
+				int delData = scan.nextInt();//2
 				
 				int delIdx = -1;
-				for (int i = 0; i < elementCnt; i++) {
-					if (arr[i] == delData) {
-						delIdx = i;
+				for (int i = 0; i < elementCnt; i++) {//element = 3
+					if (arr[i] == delData) {// arr[i] = [10, 11, 12]
+						delIdx = i;// delIdx = -1
 					}
 				}
 				
@@ -114,13 +115,14 @@ public class ArrayEx35_정답예시 {
 					arr = null;
 				}
 				else if (elementCnt > 1) {
-					int[] temp = arr;
-					arr = new int[elementCnt - 1];
+					int[] temp = arr;//temp = [10, 11, 12, 13]
+					arr = new int[elementCnt - 1];// arr= [][]
 					
 					int j = 0;
 					for (int i = 0; i<elementCnt; i++) {
 						if (i != delIdx) {
-							arr[j++] = temp[i];
+							arr[j] = temp[i];
+							j++;
 						}
 					}
 					
@@ -152,7 +154,9 @@ public class ArrayEx35_정답예시 {
 					
 					for (int i = 0; i < elementCnt + 1; i++) {
 						if (i != insertIdx) {
-							arr[i] = temp[j++];
+							arr[i] = temp[j];
+							j++;
+							//[10, 0, 12, 13] == [10, 12, 13]
 						}
 					}
 					temp = null;
