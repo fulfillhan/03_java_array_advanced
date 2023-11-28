@@ -32,6 +32,7 @@ public class ArrayEx26_정답예시 {
 		
 		for (int i = 0; i < 1000; i++) {
 			int rIdx = ran. nextInt(SIZE);
+			
 			int temp = oneToNine[0];
 			oneToNine[0] = oneToNine[rIdx];
 			oneToNine[rIdx] = temp;
