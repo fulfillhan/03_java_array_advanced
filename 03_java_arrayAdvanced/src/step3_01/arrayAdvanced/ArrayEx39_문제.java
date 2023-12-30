@@ -8,6 +8,11 @@ package step3_01.arrayAdvanced;
 public class ArrayEx39_문제 {
 
 	public static void main(String[] args) {
+		// 문제 1) 가로 합 출력
+		// 정답 1) 410, 810, 1210
+		
+		// 문제 2) 세로 합 출력
+		// 정답 2) 603, 606, 609, 612
 		
 		int[][] arr = {
 			{101, 102, 103, 104},
@@ -18,14 +23,6 @@ public class ArrayEx39_문제 {
 		int[] garo = new int[3];
 		int[] sero = new int[4];
 		
-		// 문제 1) 가로 합 출력
-		// 정답 1) 410, 810, 1210
-		
-		// 문제 2) 세로 합 출력
-		// 정답 2) 603, 606, 609, 612
-
-
-
 	}
 
 }

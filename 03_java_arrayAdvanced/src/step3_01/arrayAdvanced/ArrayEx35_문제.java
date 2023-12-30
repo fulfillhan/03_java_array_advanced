@@ -1,5 +1,6 @@
 package step3_01.arrayAdvanced;
 
+import java.util.Scanner;
 
 /*
  * 
@@ -22,6 +23,30 @@ package step3_01.arrayAdvanced;
 public class ArrayEx35_문제 {
 	public static void main(String[] args) {
 		
+		Scanner scan = new Scanner(System.in);
+		
+		int[] arr = null;
+		int elementCnt = 0;
+		
+		while (true) {
+			
+			for (int i = 0; i < elementCnt; i++) {
+				System.out.print(arr[i] + " ");
+			}
+			
+			System.out.println();
+			
+			System.out.println("[어레이리스트 컨트롤러]");
+			System.out.println("[1]추가");
+			System.out.println("[2]삭제(인덱스)");
+			System.out.println("[3]삭제(데이터)");
+			System.out.println("[4]삽입");
+			System.out.println("[0]종료");
+			
+			System.out.print("메뉴 선택 : ");
+			int sel = scan.nextInt();
+			
+		
+		}
 	}
-
 }

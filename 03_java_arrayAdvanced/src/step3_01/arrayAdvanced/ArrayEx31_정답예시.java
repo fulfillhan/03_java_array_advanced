@@ -27,7 +27,7 @@ public class ArrayEx31_정답예시 {
 			
 			maxNum = scores[i];
 			maxIdx = i;
-			
+				
 			for (int j = i; j < scores.length; j++) {
 				if (maxNum < scores[j]) {
 					maxNum = scores[j];
