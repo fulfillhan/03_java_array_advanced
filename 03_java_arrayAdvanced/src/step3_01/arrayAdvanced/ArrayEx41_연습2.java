@@ -1,5 +1,6 @@
 package step3_01.arrayAdvanced;
 // 2024-01-03
+
 //깨달은 점 :  조건 생성시 인덱스위치로 잘 제어하여 열에 따라 내려갈 수 있게끔 조절할 수 있어야한다.
 import java.util.Scanner;
 
